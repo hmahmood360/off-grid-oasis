@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Off Grid Oasis</title>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js" defer></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css">
+    <link rel="stylesheet" href="Resources/css/style.css">
+    <style>
+        #menu-toggle:checked + #menu {
+          display: block;
+        }
+    </style>
+</head>
+<body>
+    <header class="lg:px-16 px-6 bg-purple flex flex-wrap items-center lg:py-4 ">
+        <div class="flex-1 flex justify-between items-center">
+          <a href="#">
+            <img src="resources/image 27.png" alt="" class="logo inline-block">
+            <span class="text-4xl text-white font-light md:pl-2 inline-block ">OFF GRID OASIS </span>
+        </a>
+        
+        </div>
+    
+        <label for="menu-toggle" class="pointer-cursor lg:hidden block"><svg class="fill-current text-gray-900" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><title>menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg></label>
+        <input class="hidden" type="checkbox" id="menu-toggle" />
+    
+        <div class="hidden lg:flex lg:items-center lg:w-auto w-full text-white" id="menu">
+            <nav>
+                <ul class="lg:flex  items-center justify-between text-base  pt-4 lg:pt-0 font-light">
+                    <li><a class="lg:p-5 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400 open-sans " href="#">About</a></li>
+                    <li><a class="lg:p-5 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400 open-sans" href="#">Amenities</a></li>
+                    <li><a class="lg:p-5 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400 open-sans" href="#">Gallery</a></li>
+                    <li><a class="lg:p-5 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400 lg:mb-0 mb-2 open-sans" href="#">Contact</a></li>
+                    <li><a class="py-2 px-5 md:px-12 block border-b-2 bg-orange rounded-3xl border-transparent hover:border-indigo-400 lg:mb-0 mb-2 open-sans purple-clr font-bold" href="#">Book</a></li>
+                </ul>
+          </nav>
+      </div>
+    
+    </header>
+
+    <section class="hero-section bg-purple ">
+        <div class="container mx-auto ">
+            <div>
+                <h1 class=" text-white text-center md:pt-2">Minnesota’s Best Kept Secret</h1>
+                <div class="-mt-8">
+                    <img class="mx-auto" src="resources/image 12.png" alt="Hero-image " >
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="second-section">
+        <div class="container mx-auto">
+            <div class="md:grid grid-cols-3 ga-12 pt-48 pb-20 text-center text-2xl font-bold">
+                <div class=" ">
+                    <img class="mx-auto" src="resources/image 26.png" alt="1st-activity">
+                    <p class=" open-sans pt-6 px-20">Activities to reconnect with nature</p>
+                </div>
+                <div>
+                    <img class="mx-auto" src="resources/image 24.png" alt="2nd-activity">
+                    <p class=" open-sans pt-6 px-20">Rustic lodging near Itasca State Park</p>
+                </div>
+                <div>
+                    <img class="mx-auto" src="resources/image 25.png" alt="3rd-activity">
+                    <p class=" open-sans pt-6 px-20">Amenities for a comfortable stay</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="third-section bg-green">
+        <div class="container mx-auto">
+            <div class="md:grid grid-cols-2 md:px-20 p-8">
+                <div class=" text-left pt-16 md:pr-40">
+                    <h2 class="md:text-5xl text-4xl orange-clr">Why THE OASIS?</h2>
+                    <p class="open-sans text-white text-2xl md:pt-8 pt-4">The Off-Grid Oasis is a unique location that will allow you to experience everything that northern Minnesota has to offer.</p>
+                    <button class="bg-drkgreen text-xl open-sans text-white  text-center rounded-3xl px-8 transition duration-300 block  md:mt-8 mb-8 mt-4 mx-auto md:mx-0 h-10">Learn More</button>
+                </div>
+                <div>
+                    <img class="" src="resources/image 18.png" alt="Oasis">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="forth-section">
+        <div class="container mx-auto ">
+            <div>
+                <p class="md:text-5xl text-2xl text-black open-sans italic font-bold md:p-32 py-8 px-20">“Off the beaten path, you will not find another location anywhere near this unique and cool!”</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="last-section bg-purple ">
+        <div class="container mx-auto pb-16 px-8">
+            <h2 class="text-white pt-16 font-light md:text-6xl text-4xl text-center">Book your stay today! Nature awaits.</h2>
+            <button class="bg-orange open-sans purple-clr font-bold text-center rounded-3xl px-16 transition duration-300 block mx-auto mt-8   h-10">Book</button>
+        </div>
+    </section>
+
+    <footer class="bg-footer">
+        <div class="container mx-auto bg-footer pb-10">
+            <div class="md:grid grid-cols-5 font-light text-center">
+                <div class="pt-10"></div>
+                <div class="mt-10 md:border-r border-white">
+                    <p class="open-sans text-white font-normal ">Off-Grid Oasis</p>
+                    <p class="open-sans text-white">1234 W. Main Street</p>
+                    <p class="open-sans text-white">Somewhere, MN, 23146</p>
+                </div>
+                <div class="mt-10 md:border-r  border-white">
+                    <p class="open-sans text-white">info@offgridoasis.com</p>
+                    <p class="open-sans text-white">234-567-8910</p>
+                </div>
+                <div class="mt-10 ">
+                    <p class="open-sans text-white md:ml-3">Follow us on social!</p>
+                    <div class="flex flex-row md:justify-start justify-center mt-1">
+                        <a href="#"><img class="md:ml-16 " src="resources/image 20.png" alt="insta-logo"></a>
+                        <a href="#"><img class="ml-2" src="resources/image 21.png" alt="fb-logo"></a>
+                    </div>
+                </div>
+                <div></div>
+            </div>
+        </div>
+    </footer>
+    
+
+
+    
+
+
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+</body>
+</html>

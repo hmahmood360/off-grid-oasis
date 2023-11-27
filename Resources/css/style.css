@@ -1,0 +1,86 @@
+    @font-face {
+    font-family: 'Amnestia Distressed';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Amnestia Distressed'), url('Amnestiadistressed-2OnPl.woff') format('woff');
+    }
+
+*{
+    font-family:'Amnestia Distressed';
+    
+}
+.open-sans{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.hero-section{
+    position: relative;
+    height: 100vh;
+}
+
+/** IMAGES **/
+
+.logo{
+    width: 90px;
+    height: 73px;
+}
+.hero-section img{
+    position: absolute;
+    bottom: -40%;
+    left: 50%;
+    transform: translate(-50%, -15%);
+}
+.hero-section h1{    font-size: 72px;   }
+@media only screen and (max-width: 1023px){
+    .hero-section h1{ font-size: 28px; }
+    .hero-section{
+        position: relative;
+        height: 80vh;
+    }
+    .hero-section img{
+        width: 197px;
+        height: 207px;
+        position: absolute;
+        bottom: -30%;
+        left: 50%;
+        transform: translate(-50%, -80%);
+        
+    }
+}
+
+.second-section img{
+    width: auto;
+    height: 160px;
+}
+
+
+
+/** COLORS **/
+
+.bg-purple{    background-color: #203E5C;  }
+.purple-clr{    color: #203E5C;  }
+.bg-orange{ background-color:  #FC6E47;  }
+.orange-clr{  color: #F29839;  }
+.bg-green{    background-color: #4684A6;  }
+.bg-drkgreen{   background-color: #203E5C;  }
+.bg-footer{   background-color: #1D1303;  }
+
+
+
+
+@media only screen and (max-width: 1023px){
+    .hero-section h1{ font-size: 28px; }
+    .hero-section{
+        position: relative;
+        height: 80vh;
+    }
+    .hero-section img{
+        width: 197px;
+        height: 207px;
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -80%);
+        
+    }
+}
